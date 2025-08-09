@@ -31,6 +31,8 @@
             <input type="text" id="inputBox" placeholder="请输入内容">
             <button onclick="onSend()">发送</button>
         </div>
+        <button id="authorBtn" style="margin-top:10px;font-size:16px;">查看原作者</button>
+        <div id="authorName" style="margin-top:8px;font-size:16px;color:#666;"></div>
         <audio id="bgm" src="music/牢大专属BGM see you again_爱给网_aigei_com.mp3" loop></audio>
     </div>
     <script>
@@ -46,6 +48,9 @@
             } else {
                 alert('扣一复活牢大');
             }
+        }
+        document.getElementById('authorBtn').onclick = function() {
+            document.getElementById('authorName').textContent = '林楷彬';
         }
     </script>
 </body>
