@@ -1,0 +1,50 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2025-08-09 12:43:56
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2025-08-09 12:43:59
+ * @FilePath: \扣一复活劳大\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>扣一复活劳大</title>
+    <style>
+        body { text-align: center; font-family: '微软雅黑', sans-serif; background: #f5f5f5; }
+        .container { width: 600px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 0 10px #ccc; padding: 20px; }
+        .title { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+        .img-box img { max-width: 100%; height: auto; border-radius: 8px; }
+        .input-group { margin: 20px 0; display: flex; justify-content: center; align-items: center; }
+        .input-group input { font-size: 18px; padding: 6px 12px; }
+        .input-group button { font-size: 18px; padding: 6px 18px; margin-left: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">扣一复活劳大</div>
+        <div class="img-box">
+            <img id="mainImg" src="img/7cn17om8.png" alt="初始图片">
+        </div>
+        <div class="input-group">
+            <input type="text" id="inputBox" placeholder="请输入内容">
+            <button onclick="onSend()">发送</button>
+        </div>
+        <audio id="bgm" src="music/牢大专属BGM see you again_爱给网_aigei_com.mp3" loop></audio>
+    </div>
+    <script>
+        function onSend() {
+            var val = document.getElementById('inputBox').value;
+            var img = document.getElementById('mainImg');
+            var audio = document.getElementById('bgm');
+            if (val === '1') {
+                img.src = 'img/5gu02snh.png';
+                audio.play();
+            } else {
+                alert('扣一复活牢大');
+            }
+        }
+    </script>
+</body>
+</html>
