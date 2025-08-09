@@ -38,9 +38,11 @@
             var val = document.getElementById('inputBox').value;
             var img = document.getElementById('mainImg');
             var audio = document.getElementById('bgm');
+            var title = document.querySelector('.title');
             if (val === '1') {
                 img.src = 'img/5gu02snh.png';
                 audio.play();
+                title.textContent = '成功复活牢大';
             } else {
                 alert('扣一复活牢大');
             }
